@@ -1,0 +1,18 @@
+/* Nuthdanai Wangpratham personal page (/NuthdanaiWangpratham).
+   QuantCorner light canvas, approved QuantCorner brand greens, Material dark surfaces. */
+.nw {
+  --nw-canvas: #fafaf7;
+  --nw-paper: #f5f3ed;
+  --nw-surface: #ffffff;
+  --nw-ink: #212121;
+  --nw-ink-medium: #616161;
+  --nw-forest: #173c2c;
+  --nw-signal: #69f0ae;
+  --nw-green-ink: #1e8e63;
+  --nw-primary: #6200ee;
+  --nw-night: #121212;
+  --nw-night-1: #1e1e1e;
+  --nw-night-2: #232323;
+  --nw-on-dark: rgba(255, 255, 255, 0.87);
+  --nw-on-dark-medium: rgba(255, 255, 255, 0.6);
+}

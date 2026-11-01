@@ -1,0 +1,25 @@
+{
+  "name": "nuthdanai-wangpratham-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-thai": "5.2.8",
+    "@fontsource/roboto": "5.2.8",
+    "@fontsource/roboto-mono": "5.2.8",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
