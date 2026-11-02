@@ -228,7 +228,7 @@ function Hero() {
           <SplitChars text="Wangpratham" offset={6} />
         </span>
       </h1>
-      <div ref={portrait} className="nw-portrait">
+      <div ref={portrait} className="nw-portrait" data-revealed={revealed}>
         <div className="nw-portrait__stack">
           <div className="nw-portrait__layer">
             <Image
@@ -240,7 +240,7 @@ function Hero() {
             />
           </div>
           <div className="nw-portrait__layer nw-portrait__illus" aria-hidden="true">
-            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/nuth/nuth-illustrated.webp`} alt="" fill priority sizes="(max-width: 700px) 92vw, 640px" />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/nuth/nuth-signal.webp`} alt="" fill priority sizes="(max-width: 700px) 92vw, 640px" />
           </div>
         </div>
         <span className="nw-lens" aria-hidden="true" />
@@ -255,7 +255,7 @@ function Hero() {
         </div>
         <button type="button" className="nw-flip" aria-pressed={revealed} onClick={() => setRevealed((value) => !value)}>
           <span className="nw-flip__dot" aria-hidden="true" />
-          {revealed ? "Show photo" : "Show illustrated"}
+          {revealed ? "Show photo" : "Show signal"}
         </button>
         <span className="nw-scroll-cue" aria-hidden="true">
           Scroll

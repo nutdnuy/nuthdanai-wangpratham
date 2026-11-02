@@ -510,14 +510,27 @@ a:hover .nw-arrow {
   mask-image: radial-gradient(circle var(--lr) at var(--lx) var(--ly), black 96%, transparent 100%);
 }
 
+/* The lens reads as a dark scope; the full "signal" view keeps a clear background. */
+.nw-portrait[data-revealed="false"] .nw-portrait__illus {
+  background: radial-gradient(
+    circle var(--lr) at var(--lx) var(--ly),
+    var(--nw-night-1),
+    var(--nw-forest) 96%,
+    transparent 100%
+  );
+}
+
 .nw-lens {
   position: absolute;
   top: var(--ly);
   left: var(--lx);
   width: calc(var(--lr) * 2);
   aspect-ratio: 1;
-  border: 1.5px solid color-mix(in srgb, var(--nw-forest) 50%, transparent);
+  border: 2px solid var(--nw-signal);
   border-radius: 50%;
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--nw-signal) 18%, transparent),
+    0 18px 50px color-mix(in srgb, var(--nw-forest) 35%, transparent);
   opacity: var(--lo, 0);
   transform: translate(-50%, -50%);
   transition: opacity 250ms ease;
